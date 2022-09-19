@@ -44,6 +44,6 @@ In this case h(s) is computed by calculating the L1-Norm of each tile to the goa
 
 <i>L1-Norm([0,2],[0,0]) = abs(0-0) + abs(2-0) = 2</i>
 
-I will omit computing the L1-Norm of the remaining tiles but if you were to check tiles 2, 3, and 5 they have L1-Norms of 1, 2, and three respectively. I think it is important to add that I do not count the distance of tiles with the value '0' since they are not actually representing tiles but rather empty sections of the puzzle.
+I will omit computing the L1-Norm of the remaining tiles but if you were to check tiles 2, 3, and 5 they have L1-Norms of 1, 2, and 1 respectively. I think it is important to add that I do not count the distance of tiles with the value '0' since they are not actually representing tiles but rather empty sections of the puzzle.
 
  solve([6, 0, 0, 3, 5, 1, 7, 2, 4], goal_state=[1, 2, 3, 4, 5, 6, 7, 0, 0])
