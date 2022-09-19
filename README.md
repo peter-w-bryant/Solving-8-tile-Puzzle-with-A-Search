@@ -29,5 +29,7 @@ Additionally, the way I have implemented the program allows the user to specify 
 
 I will be ommitting the proof, but it should be said that every initial state is <b>solvable</b> in our case. In a version of this game that uses 8 numbers and 1 space, the solvability of an initial state is dependent on weather the number of inversions in the input state is odd, but this will not be a factor for this program.
 
+## Defining a Heuristic
+Since I am using the A* search algorithm, I needed to define a heuristic function h(s) in order to evaluate different states. For my program I just decided to use the sum of the L1-Norm of each tile to its goal position as the h(s); thus the L1-norm of two tiles in this case is the absolute difference between their x coordinates plus the absolute distance between their y coordinates. There are a number of different heuristic functions I could have chosen, however this one serves my purpose  well for this simplified version of 8-tile.
 
  solve([6, 0, 0, 3, 5, 1, 7, 2, 4], goal_state=[1, 2, 3, 4, 5, 6, 7, 0, 0])
