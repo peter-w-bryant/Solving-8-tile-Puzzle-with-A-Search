@@ -66,7 +66,7 @@ to the main function and execute the script with
 
 The result of running the script with this initial state is, 
 
-[2, 5, 1, 4, 3, 6, 7, 0, 0] h=6 moves: 0 <br / >
+[2, 5, 1, 4, 3, 6, 7, 0, 0] h=6 moves: 0 <br>
 [2, 5, 1, 4, 3, 0, 7, 0, 6] h=7 moves: 1
 [2, 5, 1, 4, 0, 3, 7, 0, 6] h=6 moves: 2
 [2, 0, 1, 4, 5, 3, 7, 0, 6] h=5 moves: 3
