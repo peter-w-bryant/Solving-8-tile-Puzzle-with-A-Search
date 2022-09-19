@@ -4,7 +4,11 @@ This program uses A* search algorithm to solve instances of 8-tile puzzle games,
 
 ## An Example
 
-If my program receives as input a <b>state</b>, which is just a list of integers such as <i>[2, 5, 1, 4, 3, 6, 7, 0, 0]</i>, my program interprets every three integers as elements of a row of an 8-tile board with '0' denoting blank spaces. Thus my example state represents the following 8-tile board,
+If my program receives as input a <b>state</b>, which is just a list of integers such as, 
+
+<i>[2, 5, 1, 4, 3, 6, 7, 0, 0]</i>
+
+my program interprets every three integers as elements of a row of an 8-tile board with '0' denoting blank spaces. Thus my example state represents the following 8-tile board,
 
 ![demoConfig1](https://user-images.githubusercontent.com/72423203/190935228-c66cfeae-1714-4235-8641-b028cac22f26.png)
 
@@ -31,5 +35,9 @@ I will be ommitting the proof, but it should be said that every initial state is
 
 ## Defining a Heuristic
 Since I am using the A* search algorithm, I needed to define a <b>heuristic function</b> h(s) in order to evaluate different states. For my program I just decided to use the sum of the L1-Norm of each tile to its goal position as the h(s); thus the L1-norm of two tiles in this case is the absolute difference between their x coordinates plus the absolute distance between their y coordinates. There are a number of different heuristic functions I could have chosen, however this one serves my purpose  well for this simplified version of 8-tile.
+
+In the example puzzle, the initial state is 
+
+<i>[2, 5, 1, 4, 3, 6, 7, 0, 0]</i>
 
  solve([6, 0, 0, 3, 5, 1, 7, 2, 4], goal_state=[1, 2, 3, 4, 5, 6, 7, 0, 0])
