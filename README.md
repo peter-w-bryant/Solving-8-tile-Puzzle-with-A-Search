@@ -27,5 +27,7 @@ which can be depicted visually as,
 
 Additionally, the way I have implemented the program allows the user to specify the goal state to be anything they choose. However, the default goal state is as it is above.
 
+I will be ommitting the proof, but it should be said that every initial state is <b>solvable</b> in our case. In a version of this game that uses 8 numbers and 1 space, the solvability of an initial state is dependent on weather the number of inversions in the input state is odd, but this will not be a factor for this program.
+
 
  solve([6, 0, 0, 3, 5, 1, 7, 2, 4], goal_state=[1, 2, 3, 4, 5, 6, 7, 0, 0])
