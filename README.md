@@ -50,8 +50,8 @@ I will omit computing the L1-Norm of the remaining tiles but if you were to chec
 This program contains two functions written in Python,
 
 <ol>
- <li>print_succ(state) — given a state of the puzzle, represented as a single list of integers with a 0 in the empty spaces, prints to the console all of the possible successor states.</li>
- <li>solve(state) — given a state of the puzzle, perform the A* search algorithm and print the path from the current state to the goal state.</li>
+ <li>print_succ(state) — given a state of the puzzle, represented as a single list of integers with a 0 in the empty spaces, prints to the console all of the possible successor states and h(s) for that particular state.</li>
+ <li>solve(state) — given a state of the puzzle, performs the A* search algorithm and prints the solution path from the current state to the goal state and h(s) for each intermediate state up to the goal state. This function also takes into account a cost function g(n), which is simply the total number of moves so far - meaning every valid successor has an additional cost of 1. </li>
 </ol>
 
- solve([6, 0, 0, 3, 5, 1, 7, 2, 4], goal_state=[1, 2, 3, 4, 5, 6, 7, 0, 0])
+
