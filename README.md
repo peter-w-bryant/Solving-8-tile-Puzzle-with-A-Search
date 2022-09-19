@@ -12,6 +12,6 @@ In this case, moving one tile can result in one of the following possible states
 
 ![demoConfig2](https://user-images.githubusercontent.com/72423203/190934654-7e7f3eea-4365-4c5e-8d62-068f2d294f83.png)
 
-
+Here, the left state is if we chose to move the 3 tile down, the middle state is if we chose to move the 6 tile down, and the right state is if we were to move the 7 tile right. These configurations are those successor states for which we can achieve after one move from our initial input state - it should be clear from here that the process of generating the successor states from these three new states can be repeated indefinitely. The goal of my program is to thus, first generate a list of all successor states (or a state space for the initial configuration), and then to solve the puzzle using the A* search algorithm.
 
  solve([6, 0, 0, 3, 5, 1, 7, 2, 4], goal_state=[1, 2, 3, 4, 5, 6, 7, 0, 0])
