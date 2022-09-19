@@ -36,7 +36,7 @@ I will be ommitting the proof, but it should be said that every initial state is
 ## Defining a Heuristic
 Since I am using the A* search algorithm, I needed to define a <b>heuristic function</b> h(s) in order to evaluate different states. For my program I just decided to use the sum of the L1-Norm of each tile to its goal position as h(s); thus the L1-norm of two tiles in this case is the absolute difference between their x coordinates plus the absolute distance between their y coordinates. There are a number of different heuristic functions I could have chosen, however this one serves my purpose  well for this simplified version of 8-tile.
 
-In the example puzzle, the initial state is 
+In the example puzzle, the initial state is,
 
 s = <i>[2, 5, 1, 4, 3, 6, 7, 0, 0]</i> and <i>h(s) = 6</i>
 
