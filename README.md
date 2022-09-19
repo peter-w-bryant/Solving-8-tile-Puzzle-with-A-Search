@@ -46,4 +46,12 @@ In this case h(s) is computed by calculating the L1-Norm of each tile to the goa
 
 I will omit computing the L1-Norm of the remaining tiles but if you were to check tiles 2, 3, and 5 they have L1-Norms of 1, 2, and 1 respectively. I think it is important to add that I do not count the distance of tiles with the value '0' since they are not actually representing tiles but rather empty sections of the puzzle.
 
+## Functions
+This program contains two functions written in Python,
+
+<ol>
+ <li>print_succ(state) — given a state of the puzzle, represented as a single list of integers with a 0 in the empty spaces, prints to the console all of the possible successor states.</li>
+ <li>solve(state) — given a state of the puzzle, perform the A* search algorithm and print the path from the current state to the goal state.</li>
+</ol>
+
  solve([6, 0, 0, 3, 5, 1, 7, 2, 4], goal_state=[1, 2, 3, 4, 5, 6, 7, 0, 0])
