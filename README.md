@@ -42,7 +42,7 @@ s = <i>[2, 5, 1, 4, 3, 6, 7, 0, 0]</i>  and  <i>h(s) = 6</i>
 
 In this case h(s) is computed by calculated the L1-Norm of each tile to the goal and summing all of them. We can see that tiles 4, 6, and 7 are already in the place where they will end up in our goal state, so they have 0 distances. Tile 1 has an L1-norm of 2,
 
-<i>L1-Norm([0,1],[0,0]) = abs(0-0) + abs(2-0) = 2</i>
+<i>L1-Norm([0,2],[0,0]) = abs(0-0) + abs(2-0) = 2</i>
 
 I will omit computing the L1-Norm of the remaining tiles, but I will add that I do not count the distance of tiles with the value '0' since they are not actually representing tiles but rather empty sections of the puzzle.
 
