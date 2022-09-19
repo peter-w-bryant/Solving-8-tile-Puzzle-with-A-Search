@@ -16,7 +16,7 @@ Here, the left state is if we chose to move the 3 tile down, the middle state is
 
 ## The Goal State
 
-In order to "solve" the 8-tile puzzle, it is necessary to specify the <b>goal state</b> of the puzzle. The goal state of the puzzle is
+In order to "solve" the 8-tile puzzle, it is necessary to specify the <b>goal state</b> of the puzzle. The goal state of the puzzle is,
 
 <i>[1, 2, 3, 4, 5, 6, 7, 0, 0]</i>
 
