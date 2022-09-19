@@ -4,7 +4,7 @@ Implemented A* search algorithm to solve instances of 8-tile puzzle games, requi
 </ b>
 <i> Take this example configuration, </i>
 
-If my program recieves as input a <b>state</b>, which is just a list of integers such as <i>[2, 5, 1, 4, 3, 6, 7, 0, 0]</i>, my program interprets every three integers as elements of a row of an 8-tile board with '0' denoting blank spaces.
+If my program receives as input a <b>state</b>, which is just a list of integers such as <i>[2, 5, 1, 4, 3, 6, 7, 0, 0]</i>, my program interprets every three integers as elements of a row of an 8-tile board with '0' denoting blank spaces.
 
 
 
