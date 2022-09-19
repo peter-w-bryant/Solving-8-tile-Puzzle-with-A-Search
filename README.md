@@ -25,7 +25,7 @@ which can be depicted visually as,
 
 ![goalConfig](https://user-images.githubusercontent.com/72423203/190935101-3b564c34-3773-4a69-83d3-db5d24749a20.png)
 
-
+Additionally, the way I have implemented the program allows the user to specify the goal state to be anything they choose. However, the default goal state is as it is above.
 
 
  solve([6, 0, 0, 3, 5, 1, 7, 2, 4], goal_state=[1, 2, 3, 4, 5, 6, 7, 0, 0])
