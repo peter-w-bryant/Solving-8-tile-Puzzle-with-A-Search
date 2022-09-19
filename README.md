@@ -6,7 +6,7 @@ This program uses A* search algorithm to solve instances of 8-tile puzzle games,
 
 If my program receives as input a <b>state</b>, which is just a list of integers such as <i>[2, 5, 1, 4, 3, 6, 7, 0, 0]</i>, my program interprets every three integers as elements of a row of an 8-tile board with '0' denoting blank spaces. Thus my example state represents the following 8-tile board,
 
-![demoConfig1](https://user-images.githubusercontent.com/72423203/190934505-3bfac3ea-0578-4897-8071-de3b2b87b94f.png =100x) 
+<img src="https://user-images.githubusercontent.com/72423203/190934505-3bfac3ea-0578-4897-8071-de3b2b87b94f" width="auto" height="200" />
 
 In this case, moving one tile can result in one of the following possible states,
 
