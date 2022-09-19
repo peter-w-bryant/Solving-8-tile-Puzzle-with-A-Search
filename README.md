@@ -54,4 +54,28 @@ This program contains two functions written in Python,
  <li>solve(state) — given a state of the puzzle, performs the A* search algorithm and prints the solution path from the current state to the goal state and h(s) for each intermediate state up to the goal state. This function also takes into account a cost function g(n), which is simply the total number of moves so far - meaning every valid successor has an additional cost of 1. </li>
 </ol>
 
+## Running the Program and Sample Output
 
+You can run the program yourself by downloading this repo, writing solve(<i>state</i>) in the main function of solve_puzzle.py, and executing the script. For example, to run the initial example state add, 
+
+<i>solve([2, 5, 1, 4, 3, 6, 7, 0, 0])</i>
+
+to the main function and execute the script with 
+
+<i> python3 solve_puzzle.py </i>
+
+The result of running the script with this initial state is, 
+
+[2, 5, 1, 4, 3, 6, 7, 0, 0] h=6 moves: 0
+[2, 5, 1, 4, 3, 0, 7, 0, 6] h=7 moves: 1
+[2, 5, 1, 4, 0, 3, 7, 0, 6] h=6 moves: 2
+[2, 0, 1, 4, 5, 3, 7, 0, 6] h=5 moves: 3
+[0, 2, 1, 4, 5, 3, 7, 0, 6] h=4 moves: 4
+[0, 2, 1, 4, 0, 3, 7, 5, 6] h=5 moves: 5
+[0, 0, 1, 4, 2, 3, 7, 5, 6] h=6 moves: 6
+[0, 1, 0, 4, 2, 3, 7, 5, 6] h=5 moves: 7
+[0, 1, 3, 4, 2, 0, 7, 5, 6] h=4 moves: 8
+[0, 1, 3, 4, 2, 6, 7, 5, 0] h=3 moves: 9
+[1, 0, 3, 4, 2, 6, 7, 5, 0] h=2 moves: 10
+[1, 2, 3, 4, 0, 6, 7, 5, 0] h=1 moves: 11
+[1, 2, 3, 4, 5, 6, 7, 0, 0] h=0 moves: 12
