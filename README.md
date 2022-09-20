@@ -31,7 +31,7 @@ which can be depicted visually as,
 
 Additionally, the way I have implemented the program allows the user to specify the goal state to be anything they choose. However, the default goal state is as it is above.
 
-I will be ommitting the proof, but it should be said that every initial state is <b>solvable</b> in our case. In a version of this game that uses 8 numbers and 1 space, the solvability of an initial state is dependent on weather the number of inversions in the input state is odd, but this will not be a factor for this program.
+I will be ommitting the proof, but it should be said that every initial state is <b>solvable</b> in our case. In a version of this game that uses 8 numbers and 1 space, the solvability of an initial state is dependent on whether the number of inversions in the input state is odd, but this will not be a factor for this program.
 
 ## Defining a Heuristic
 Since I am using the A* search algorithm, I needed to define a <b>heuristic function</b> h(s) in order to evaluate different states. For my program I just decided to use the sum of the L1-Norm of each tile to its goal position as h(s); thus the L1-norm of two tiles in this case is the absolute difference between their x coordinates plus the absolute distance between their y coordinates. There are a number of different heuristic functions I could have chosen, however this one serves my purpose  well for this simplified version of 8-tile.
