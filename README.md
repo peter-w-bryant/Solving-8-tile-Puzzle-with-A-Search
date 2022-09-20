@@ -1,4 +1,4 @@
-#Solving-8-tile-Puzzle-with-A*-Search
+# Solving-8-tile-Puzzle-with-A*-Search
 ## Description
 This program uses A* search algorithm to solve instances of 8-tile puzzle games, requiring state space generation given a configuration of a 3x3 grid of 7 numbers and 2 black spaces. 
 
